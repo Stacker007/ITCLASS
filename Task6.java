@@ -1,4 +1,3 @@
-
 package com.company;
 
 import java.util.Scanner;
@@ -34,7 +33,7 @@ public class Task6 {
         System.out.println("Исходная матрица:");
         printArr(n, m, matrix);
         try {
-            for (int j=0;j<m;j++) {
+            for (int j = 0; j < m; j++) {
                 int posl; //индекс последнего обмена
                 int k = n - 1; //пока не закончены плановые проходы и обмены были
                 while (k > 0) {
@@ -49,7 +48,7 @@ public class Task6 {
                     k = posl; //следующий просмотр до последнего обмена
                 }
             }
-        }catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
         }
 
