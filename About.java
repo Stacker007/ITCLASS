@@ -25,7 +25,7 @@ public class About {
                 Task1.tab();
                 break;
             case 2:
-                ;
+                Task2.tab();
                 break;
             case 3:
                 ;
