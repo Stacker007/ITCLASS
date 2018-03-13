@@ -14,38 +14,34 @@ import java.util.Scanner;
 
 public class Task8 {
 
-
     public static void tab() throws Exception {
         Scanner in = new Scanner(System.in);
         System.out.print("Введите количество автомобилей: ");
         int countOfCars;
         try {
-            countOfCars= Integer.parseInt(in.nextLine());
+            countOfCars = Integer.parseInt(in.nextLine());
 
-        }catch (Exception e) {
+        } catch (Exception e) {
             throw new Exception("Ошибка ввода!");
         }
         Vehicles[] your = new Vehicles[countOfCars];
-        for (int i=0;i<countOfCars;i++) {
+        for (int i = 0; i < countOfCars; i++) {
             your[i] = new Vehicles();
         }
-        your[0]=new Vehicles();
-        your[1]=new Vehicles();
-
 
         System.out.println("Введите максимальную стоимость автомобиля: ");
         int costGeneral;
         try {
             costGeneral = Integer.parseInt(in.nextLine());
 
-        }catch (Exception e) {
+        } catch (Exception e) {
             throw new Exception("Ошибка ввода!");
         }
 
         System.out.println("Выбранные автомобили:");
 
-        for (int i=0;i<countOfCars;i++){
-            if(your[i].retCost()<costGeneral)your[i].printParametres();
+        for (int i = 0; i < countOfCars; i++) {
+            if (your[i].retCost() < costGeneral) your[i].printParametres();
 
         }
 
