@@ -40,10 +40,11 @@ public class About {
                 Task6.tab();
                 break;
             case 7:
-                /*;
-                break;*/
+                Task7.tab();
+                break;
             case 8:
-                System.out.println("Эту задачу еще не решил))");
+                Task8.tab();
+
                 break;
             default:
                 throw new Exception("Задачи с таким номером нет!");
