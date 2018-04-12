@@ -14,7 +14,7 @@ struct Rectangle{
 	int A;
 	int B;
 };
-int Perimeter(struct Rectangle);
+int Perimeter(struct Rectangle*);
 int main(void)
 {
 	SetConsoleCP(1251);
@@ -23,13 +23,13 @@ int main(void)
 	puts("Ââåäèòå ðàçìåðû ñòîðîí ïðÿìîóãîëüíèêà");
 	scanf("%d%d", &R1.A, &R1.B);
 	int P;
-	P=Perimeter (R1);
+	P=Perimeter (&R1);
 	printf("Ïåðèìåòð ðàâåí %d\n", P);
 	getch();
 	
 	
 	return(0);
 }
-int Perimeter (struct Rectangle rectangle){
-	return(()rectangle.A+rectangle.B)*2);
+int Perimeter (struct Rectangle* rectangle){
+	return((rectangle->A+rectangle->B)*2);
 }
